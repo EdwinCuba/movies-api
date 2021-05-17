@@ -1,0 +1,32 @@
+{
+  "name": "movies-api",
+  "version": "1.0.0",
+  "description": "backend of platzi video",
+  "main": "index.js",
+  "scripts": {
+    "dev": "DEBUG=app:* NODE_ENV=development nodemon index",
+    "start": "NODE_ENV=production node index",
+    "prepare": "husky install"
+  },
+  "author": "Edwin Cuba <edwincubad@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/boom": "^9.1.2",
+    "@hapi/joi": "^17.1.1",
+    "dotenv": "^9.0.2",
+    "dotenv-flow": "^3.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
